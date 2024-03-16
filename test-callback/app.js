@@ -35,7 +35,7 @@ button.addEventListener('click', function(){
 });
 
 function getUsers(){
-    return fetch("http://127.0.0.1:5500/info.json")
+    return fetch("http://127.0.0.1:5000/test-callback/info.json")
         .then(function(response){
             return response.json();
         });
