@@ -1,0 +1,51 @@
+:root {
+    --gradient-color-1: rgba(25,22,84,1);
+    --gradient-color-2: rgba(67,198,172,1);
+    --gradient-color-3: rgba(25,22,84,0.5);
+    --gradient-color-4: rgba(67,198,172,0.4);
+    --white-color: #f1f1f1;
+    --black-color: #2c2b2b;
+    --font-size: 18px;
+  }
+
+body {
+    min-height: 100vh;
+    background: -moz-linear-gradient(left, var(--gradient-color-1) 0%, var(--gradient-color-2) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, var(--gradient-color-1)), color-stop(100%, var(--gradient-color-2)));
+    background: -webkit-linear-gradient(left, var(--gradient-color-1) 0%, rgba(67,198,172,1) 100%);
+    background: -o-linear-gradient(left, var(--gradient-color-1) 0%,var(--gradient-color-2) 100%);
+    background: -ms-linear-gradient(left, var(--gradient-color-1) 0%, var(--gradient-color-2) 100%);
+    background: linear-gradient(to right,var(--gradient-color-1) 0%,var(--gradient-color-2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191654', endColorstr='#43c6ac', GradientType=1 );
+}
+
+
+
+select {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+    font-size: 60x;
+}
+option{
+    padding: 5px;
+    background-color:blanchedalmond;
+    color: black;
+    font-size: 15px;
+}
+
+button{
+    background-color: aquamarine;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+h3{
+    color: white;
+}
+
+ul li{
+    color: white;
+}
