@@ -56,3 +56,40 @@ function getTasks(userId) {
         .then(resp => resp.json())
         .then(tasks => tasks.filter(task => task.userId == userId));
 }
+
+
+/* UNA MEJOR MANERA DE HACERLO */
+/* 
+document.addEventListener('DOMContentLoaded', ()=>{
+    getAllusers()
+        .then(allUsers =>{
+            let template = ""
+            for (let i = 0; i < allUsers.length; i ++){
+                template += `
+                    <option value="${allUsers[i].id}">${allUsers[i].fistname}</option>
+                `;
+            }
+            userSelect.innerHTML = template;
+        });
+});
+
+userSelect.addEventListener('change', ()=>{
+    const id = parseInt(e.target.value);
+    getAllUsers()
+        .then(allUsers =>{
+            const ul = document.createElement('ul')
+            for(let i = 0; i < allUsers.lentgh; i ++){
+                if (id === allUsers[i].id){
+                    const liNombre = document.createElement('li')
+                    const liCorreo = document.createElement('li')
+                    liNombre.innerText = `${allUsers[i].firstname} ${allUsers[i].lastname}`
+                    liCorreo.innerText = `${allUsers[i].email};
+                    ul.appendChild(liNombre);
+                    ul.appendChild(liCorreo);
+                    break;
+                }
+            }
+            const h3 =  document.createElement('h3');
+        });
+});
+*/
