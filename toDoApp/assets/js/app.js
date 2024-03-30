@@ -46,7 +46,7 @@ function toggleTaskContainerVisibility() {
 }
 
 function getUser(userId) {
-    return fetch('data/usuarios.json')
+    return fetch('http://localhost:3000/connection.php')
         .then(resp => resp.json())
         .then(users => users[userId - 1]);
 }

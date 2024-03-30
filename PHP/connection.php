@@ -1,12 +1,9 @@
 <?php
 
+include "./partials/connection.php";
+
 try {
-    // Conexion a la base de datos
-    $conn = new PDO(
-    "mysql:host=localhost;dbname=tasklist",
-    "root",
-    ""
-);
+   
 //Para ejecutar estructuras SQL en PHP
 //Se utiliza la función fetch para mostrar el valor
 $result = $conn->query("select * from user;");
