@@ -10,7 +10,7 @@ try {
     while ($row = $state->fetch(PDO::FETCH_ASSOC)) {
         $json [] = [
             "id" => $row['id'],
-            'fullname' => "{$row['firstName']}{$row['lastName']}"
+            'fullname' => "{$row['firstname']}{$row['lastname']}"
         ];
     }
     echo json_encode($json);

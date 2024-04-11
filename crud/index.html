@@ -38,14 +38,20 @@
                 </select>
               </div>
               <div class="mb-3">
+                <select class="form-select" name="listTasks" id="listTasks">
+                  <option selected disabled>Select a Tasks</option>
+                  <hr class="border-dark" />
+                </select>
+              </div>
+              <!--<div class="mb-3">
                 <textarea
                   placeholder="Write a task's description"
                   class="form-control"
                   name="description"
                   id="description"
                   rows="8"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100" >Save</button>
+              </div>-->
+              <button type="submit" class="btn btn-primary w-100">SAVE</button>
             </form>
           </div>
         </article>
@@ -55,22 +61,24 @@
               <tr>
                 <th>ID</td>
                 <th>User</td>
+                <th>IdTask</td>  
                 <th>Title</td>
-                <th>Description</td>
+                <th></td>
                 <th>Action</td>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="tasks">
               <tr>
                 <td>1</td>
                 <td>Rogelio</td>
+                <td>1</td>                
                 <td>Some Title</td>
-                <td>Lorem ipsum dolor .</td>
+                <!--<td>Lorem ipsum dolor .</td>-->
                 <td>
                   <button class="btn btn-secondary btn-sm">
                     <span>Update</span> <i class="nf nf-md-pencil"></i>
                   </button>
-                  <button class="btn btn-danger btn-sm">
+                  <button class="task-delete btn btn-danger btn-sm">
                     <span>Delete</span> <i class="nf nf-cod-trash"></i>
                   </button>
                 </td>
@@ -78,13 +86,14 @@
               <tr>
                 <td>1</td>
                 <td>Rogelio</td>
+                <td>1</td>   
                 <td>Some Title</td>
-                <td>Lorem ipsum dolor .</td>
+                <!--<td>Lorem ipsum dolor .</td>-->
                 <td>
                   <button class="btn btn-secondary btn-sm">
                     <span>Update</span> <i class="nf nf-md-pencil"></i>
                   </button>
-                  <button class="btn btn-danger btn-sm">
+                  <button class="task-delete btn btn-danger btn-sm">
                     <span>Delete</span> <i class="nf nf-cod-trash"></i>
                   </button>
                 </td>
