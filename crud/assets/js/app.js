@@ -120,10 +120,8 @@ document.addEventListener('click', async (event) => {
     if (event.target.classList.contains('actualizar')) {
         const idTask = event.target.value;
         seleccionarID = idTask;
-        console.log("ID",seleccionarID)
         const infoTask = await fetch(`api/getTask.php?selectedTaskId=${seleccionarID}`);
         const data = await infoTask.json();
-        console.log("Informacion Task",data[0].name);
         formTask.children[0].children[0].value = data[0].title;
         formTask.children[1].children[0].value = data[0].iduser;
         btnUP.innerText = "UPDATE";
